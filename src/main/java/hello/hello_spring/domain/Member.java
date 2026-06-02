@@ -2,6 +2,7 @@ package hello.hello_spring.domain;
 
 public class Member {
 
+    // 데이터: 회원ID, 회원이름
     private Long id;
     private String name;
 
