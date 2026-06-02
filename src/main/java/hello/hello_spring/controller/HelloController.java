@@ -31,7 +31,7 @@ public class HelloController {
         return "ㅋㅋㅋㅋㅋ " + name; //"hello spring"
     }
 
-    // API
+    // API(JSON, key : value방식으로 넘겨줌.)
     @GetMapping("hello-api")
     @ResponseBody
     public Hello helloApi(@RequestParam("name") String name) {
@@ -43,6 +43,7 @@ public class HelloController {
     static class Hello {
         private String name;
 
+        // 프로퍼티 접근방식(get, set)
         public String getName() {
             return name;
         }
